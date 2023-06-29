@@ -10,6 +10,6 @@ class User extends Model
 
     public function countries()
     {
-        return $this->belongsToMany('App\Country', 'UserCountryMapping', 'userId', 'countryId');
+        return $this->belongsToMany('App\Model\Country', 'UserCountryMapping', 'userId', 'countryId');
     }
 }

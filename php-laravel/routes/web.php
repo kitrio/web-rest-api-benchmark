@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,7 +14,7 @@
 |
 */
 
-Route::get('/hello', 'Controller@hello');
-Route::get('/compute', 'Controller@compute');
-Route::get('/countries', 'Controller@countries');
-Route::get('/users', 'Controller@users');
+Route::get('/hello', [Controller::class, 'hello']);
+Route::get('/compute', [Controller::class, 'compute']);
+Route::get('/countries', [Controller::class, 'countries']);
+Route::get('/users', [Controller::class, 'users']);

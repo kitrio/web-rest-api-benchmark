@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Country;
+use App\Model\User;
 use Laravel\Lumen\Routing\Controller as BaseController;
-use App\User;
-use App\Country;
 
 class Controller extends BaseController
 {
